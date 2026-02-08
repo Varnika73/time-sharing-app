@@ -1,10 +1,3 @@
-st.set_page_config(
-    page_title="Time Sharing",
-    page_icon="⏰"
-)
-
-st.title("⏰ Time Sharing")
-
 import streamlit as st
 import pandas as pd
 import os
@@ -59,9 +52,4 @@ if submitted:
         st.dataframe(matches[["name", "area", "activity", "time"]])
     else:
         st.info("No matches yet. Check back later!")
-
-
-        st.info("No matches yet. Check back later!")
-
-
 
